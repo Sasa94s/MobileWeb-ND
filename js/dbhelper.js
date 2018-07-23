@@ -8,7 +8,6 @@ class DBHelper {
    * Change this to restaurants.json file location on your server.
    */
   static get DATABASE_URL() {
-    const port = 3000 // Change this to your server port
     return `./data/restaurants.json`;
   }
 
@@ -150,7 +149,7 @@ class DBHelper {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-    return (`/img/${restaurant.photograph}`);
+    return (`https://${window.location.host}/mws-restaurant-stage-1/img/${restaurant.photograph}`);
   }
 
   /**
