@@ -167,17 +167,11 @@ createRestaurantHTML = (restaurant) => {
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';
-<<<<<<< HEAD
   image.srcset = `${imgURL.substr(0, imgURL.lastIndexOf('.'))}-300${imgURL.substr(imgURL.lastIndexOf('.'))}`;
   image.alt = `${restaurant.name} Restaurant`;
   picture.append(image);
   
   li.append(picture);
-=======
-  image.src = DBHelper.imageUrlForRestaurant(restaurant);
-  console.log(image.src);
-  li.append(image);
->>>>>>> fix urls
 
   const name = document.createElement('h1');
   name.innerHTML = restaurant.name;
