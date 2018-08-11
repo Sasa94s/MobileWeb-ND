@@ -8,7 +8,7 @@ self.addEventListener('install', (event) => {
                 // Static Precaching main assets
                 cache.addAll([
                     '/',
-                    '/index.html',
+                    './index.html',
                     '/js/dbhelper.js',
                     '/js/index.js',
                     '/js/main.js',
