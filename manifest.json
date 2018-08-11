@@ -1,0 +1,14 @@
+{
+    "name": "EatyMeaty - Restaurant Reviews",
+    "short_name": "EatyMeaty",
+    "start_url": "/index.html",
+    "scope": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#3F51B5",
+    "description": "Find Restaurant address, working hours, and Read guest comments and reviews about them!",
+    "dir": "ltr",
+    "lang": "en-US",
+    "orientation": "portrait-primary"
+
+}
