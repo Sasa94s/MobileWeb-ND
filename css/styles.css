@@ -370,8 +370,30 @@ h6 {
   }
 
   .inside #map {
-    margin: 36px 0 0 0;
-    min-height: calc(100% - 36px);
+    margin: auto;
+  }
+
+  .inside #map-container {
+    height: 300px;
+    display: inline-block;
+    position: relative;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    width: 100%;
+  }
+
+  #breadcrumb {
+    width: auto;
+  }
+  
+  .inside #footer {
+    width: auto;
+  }
+
+  #restaurant-container,
+  #reviews-container {
+    width: 100%;
   }
 }
 
@@ -392,6 +414,28 @@ h6 {
   .inside #map {
     margin: auto;
     min-height: 100%;
+  }
+  
+  .inside #map-container {
+    height: calc(100% - 76px);
+    position: fixed;
+    right: 0px;
+    top: 76px;
+    bottom: 0px;
+    width: 50%;
+  }
+
+  #breadcrumb {
+    width: calc(50% - 80px);
+  }
+  
+  .inside #footer {
+    width: 47%;
+  }
+
+  #restaurant-container,
+  #reviews-container {
+    width: 50%;
   }
 }
 
@@ -424,4 +468,21 @@ h6 {
     margin: auto;
     min-height: 100%;
   }
+}
+
+.offline-content {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 5px 0;
+  align-items: center;
+  text-align: center;
+}
+
+.error-img {
+  width: 30%;
+}
+
+.error-msg {
+  display: inline;
+  font-size: 1.3em;
 }
