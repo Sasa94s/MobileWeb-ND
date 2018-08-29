@@ -4,6 +4,23 @@ const CACHE_DYNAMIC_VERSION = 'v1';
 const CACHE_STATIC_NAME = `static_${CACHE_STATIC_VERSION}`;
 const CACHE_DYNAMIC_NAME = `dynamic_${CACHE_DYNAMIC_VERSION}`;
 
+const urlsToCache = [
+    '/',
+    '/index.html',
+    '/restaurant.html',
+    '/offline.html',
+    '/img/sad.svg',
+    '/img/refresh.svg',
+    '/js/dbhelper.js',
+    '/js/main.js',
+    '/js/restaurant_info.js',
+    '/js/index.js',
+    '/css/styles.css',
+    '/manifest.json',
+    'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
+    'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js'
+];
+
 self.addEventListener('install', (event) => {
     console.log("[Service worker] Installing Service Worker...", event);
     event.waitUntil(
@@ -12,17 +29,7 @@ self.addEventListener('install', (event) => {
             .then((cache) => {
                 console.log('[Service Worker] Precaching App Shell...');
                 // Static Precaching main assets
-                cache.addAll([
-                    '/',
-                    '/index.html',
-                    '/offline.html',
-                    '/img/sad.svg',
-                    '/img/refresh.svg',
-                    '/js/dbhelper.js',
-                    '/js/index.js',
-                    '/js/main.js',
-                    '/css/styles.css'
-                ]);
+                cache.addAll(urlsToCache);
             })
     );
 });
@@ -46,7 +53,7 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
     console.log("[Service worker] Fetching something...", event);
     event.respondWith(
-        caches.match(event.request)
+        caches.match(event.request, { ignoreSearch: true })
             .then((localResponse) => {
                 // If the response exists in the cache
                 if(localResponse) {
