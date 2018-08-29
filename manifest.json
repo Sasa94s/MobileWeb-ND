@@ -1,8 +1,8 @@
 {
     "name": "EatyMeaty - Restaurant Reviews",
     "short_name": "EatyMeaty",
-    "start_url": "/index.html",
-    "scope": ".",
+    "start_url": "./index.html",
+    "scope": "https://sasa94s.github.io/mws-restaurant-stage-1/",
     "display": "standalone",
     "background_color": "#fff",
     "theme_color": "#3F51B5",
