@@ -6,17 +6,17 @@ const CACHE_DYNAMIC_NAME = `dynamic_${CACHE_DYNAMIC_VERSION}`;
 
 const urlsToCache = [
     '/',
-    '/index.html',
-    '/restaurant.html',
-    '/offline.html',
-    '/img/sad.svg',
-    '/img/refresh.svg',
-    '/js/dbhelper.js',
-    '/js/main.js',
-    '/js/restaurant_info.js',
-    '/js/index.js',
-    '/css/styles.css',
-    '/manifest.json',
+    './index.html',
+    './restaurant.html',
+    './offline.html',
+    './img/sad.svg',
+    './img/refresh.svg',
+    './js/dbhelper.js',
+    './js/main.js',
+    './js/restaurant_info.js',
+    './js/index.js',
+    './css/styles.css',
+    './manifest.json',
     'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
     'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js'
 ];
