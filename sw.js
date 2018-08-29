@@ -5,18 +5,18 @@ const CACHE_STATIC_NAME = `static_${CACHE_STATIC_VERSION}`;
 const CACHE_DYNAMIC_NAME = `dynamic_${CACHE_DYNAMIC_VERSION}`;
 
 const urlsToCache = [
-    'mws-restaurant-stage-1/',
-    'mws-restaurant-stage-1/index.html',
-    'mws-restaurant-stage-1/restaurant.html',
-    'mws-restaurant-stage-1/offline.html',
-    'mws-restaurant-stage-1/img/sad.svg',
-    'mws-restaurant-stage-1/img/refresh.svg',
-    'mws-restaurant-stage-1/js/dbhelper.js',
-    'mws-restaurant-stage-1/js/main.js',
-    'mws-restaurant-stage-1/js/restaurant_info.js',
-    'mws-restaurant-stage-1/js/index.js',
-    'mws-restaurant-stage-1/css/styles.css',
-    'mws-restaurant-stage-1/manifest.json',
+    '/mws-restaurant-stage-1/',
+    '/mws-restaurant-stage-1/index.html',
+    '/mws-restaurant-stage-1/restaurant.html',
+    '/mws-restaurant-stage-1/offline.html',
+    '/mws-restaurant-stage-1/img/sad.svg',
+    '/mws-restaurant-stage-1/img/refresh.svg',
+    '/mws-restaurant-stage-1/js/dbhelper.js',
+    '/mws-restaurant-stage-1/js/main.js',
+    '/mws-restaurant-stage-1/js/restaurant_info.js',
+    '/mws-restaurant-stage-1/js/index.js',
+    '/mws-restaurant-stage-1/css/styles.css',
+    '/mws-restaurant-stage-1/manifest.json',
     'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
     'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js'
 ];
